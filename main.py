@@ -41,9 +41,7 @@ class GameApp(App):
             coordinate.append([j for j in range(i, i + 100, 10)])
 
 
-        iter_D = [5, 4, 3, 2, 1, 0, 10, 20, 30, 40, 50]
-        for i in iter_D:
-            coordinate.append([i * 10 + j for j in range(0, 100, 11)])
+        
 
         #пробегаемся по игровому полю с помощью цикла, изначально хотел сделать иначе vector = lambda item: [self.buttons[x].text for x in item], но столкнулся с проблемой
         vector = lambda item: [self.button[x].text for x in item]
